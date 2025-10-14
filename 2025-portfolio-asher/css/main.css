@@ -1,9 +1,14 @@
 @media (max-width: 375px){
 }
 
+body {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
 h2 {
 	text-align: center;
 	font-size: 50px;
+	color:#F0AC5E;
 }
 ul {
   list-style-type: none;
@@ -17,21 +22,43 @@ ul {
 }
 
 ul >li {
-	background-color: black;
+	background-color: #6E7DD2;
 }
 
 ul li a {
   display: block;
-  color: white;
+  color: #FFEBA8;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: #F0AC5E;
 }
 
 #skillbox {
+	width:300px;
+	display:flex;
+	flex-wrap:wrap;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	
+}
+
+#Logobox {
+	text-align: center;
+	padding:30px;
+}
+
+#textbox-aboutme{
+	width:300px;
+	display:flex;
+	flex-wrap:wrap;
+	color:#FFEBA8;
+}
+
+#wrapper {
+	display:flex;
 	
 }
