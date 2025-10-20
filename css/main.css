@@ -1,13 +1,20 @@
-@media (max-width: 375px){
-	
-}
 
 body {
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 }
 
+
+nav {
+	margin:0 auto;
+	padding: 0;
+	width:1000px;
+}
+
+
+
 p{
 	font-size: 18px;
+	color:#FFEBA8;
 }
 
 h2 {
@@ -19,15 +26,22 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-/*  background-color: #333333;*/
 	display: flex;
 	gap:50px;
 	justify-content: center;
+	flex-flow:wrap;
 }
 
 ul >li {
 	background-color: #6E7DD2;
+	margin:0;
+  padding:0;
+  display:inline-block;
+  width:200px;
+  min-height:50px;
+  background-color:6E7DD2;
+  line-height:50px;
+  text-align:center;
 }
 
 ul li a {
@@ -53,12 +67,20 @@ ul li a:hover {
 
 #LogoHold {
 	text-align: center;
-	padding:30px;
+	
 	
 }
 
+
+.Logobox {
+	display:inline-block;
+	width:600px;
+}
+
+
 .logobox:hover{
 	transform: translateY(-4px);
+	
 }
 
 #textbox-aboutme{
@@ -91,6 +113,9 @@ button{
 	width: 50px;
 	height: 50px;
 	background-image: image(src="https://placehold.co/50x50");
+	color:#FFEBA8;
+	border-color:#F0AC5E;
+	
 }
 .my-box{
 	
@@ -101,8 +126,63 @@ button{
 #email {
   width: 500px;
   height: 200px;
-  border:7px solid #333; 
   background-color: #6E7DD2;  
   text-align: center;
+  
 	
+}
+
+@media (max-width: 375px){
+	nav {
+	width:300px;
+}
+	.Logobox {
+	display:inline-block;
+	width:300px;
+}
+
+h2 {
+		text-align: center;
+		
+	}
+	
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+/*  background-color: #333333;*/
+	display: flex;
+	gap:10px;
+	justify-content: center;
+}
+
+ul >li {
+	background-color: #6E7DD2;
+}
+
+ul li a {
+  display: block;
+  color: #FFEBA8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #F0AC5E;
+}
+	
+	
+#LogoHold {
+	width:20px;
+	
+}
+
+
+	
+
+	p {
+		font-size:10px;
+	}
 }
